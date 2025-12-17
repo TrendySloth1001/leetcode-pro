@@ -22,11 +22,11 @@ function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode
             current.next = list2;
             list2 = list2.next;
         }
-        current = current.next; 
+        current = current.next;
     }
 
     if (list1 !== null) {
-        current.next = list1;
+        current.next = list1; 
     } else {
         current.next = list2;
     }
